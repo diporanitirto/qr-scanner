@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>DIPORANI SCANNER</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="logo.png" alt="Logo Pramuka" class="logo">
+            <h1>DIPORANI SCANNER</h1>
+        </header>
+
+        <div id="reader"></div>
+
+        <div class="scan-frame" aria-hidden="true">
+            <img src="logo.png" alt="">
+        </div>
+
+        <div class="status" id="status" role="status" aria-live="polite">
+            <p id="status-text">Menyiapkan kamera</p>
+            <button type="button" id="retry" hidden>Coba lagi</button>
+        </div>
+
+        <footer class="footer">
+            <a href="https://instagram.com/diporani.tirto" target="_blank" rel="noopener" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/diporanitirto" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
